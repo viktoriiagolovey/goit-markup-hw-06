@@ -221,6 +221,37 @@ button {
   background-position: center;
   background-size: cover;
 }
+.hero-section {
+  background-image:
+    linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+    image-set(
+      url("../images/hero-mobile1.jpg") 1x,
+      url("../images/hero-mobile2x.jpg") 2x
+    );
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      image-set(
+        url("../images/desk-hero.jpg") 1x,
+        url("../images/desk-hero2x.jpg") 2x
+      );
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    background-image:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      image-set(
+        url("../images/hero-laptop.jpg") 1x,
+        url("../images/hero-laptop2x.jpg") 2x
+      );
+  }
+}
+
 .hero-title {
     font-weight: 700;
 font-size: 36px;
@@ -305,9 +336,11 @@ text-align: center;
   color: #434455;
   width: 100%;
 }
+.benefits-section {
+    padding: 96px 0;
+}
 .features-list {
 display: flex;
-padding: 96px 0;
   flex-wrap: wrap;
   align-items: center;
   gap: 72px;
@@ -495,7 +528,7 @@ flex-direction: row;
 justify-content: center;
 }
 .team-item{
-    width: ((100% - 32px) / 2);
+    width: calc((100% - 32px) / 2);
 }
 }
 @media screen and (min-width: 1158px){
@@ -587,6 +620,9 @@ img {
 }
 }
 @media screen and (min-width: 1158px){
+    .hidden{
+        display: flex;
+    }
     .portfolio-section {
   padding: 120px 0;
 }
