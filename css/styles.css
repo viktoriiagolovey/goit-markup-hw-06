@@ -720,6 +720,7 @@ img {
   display: flex;
   flex-direction: column;
   max-width: 320px;
+  gap: 16px;
 }
 .icons.footer {
   width: 24px;
