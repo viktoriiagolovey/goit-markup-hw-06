@@ -377,11 +377,13 @@ color: #2e2f42;
 
 .features-list {
 display: flex;
-padding: 96px 0;
-gap: 24px;
+column-gap: 24px;
+row-gap: 72px;
 }
 .features-item {
   width: calc((100% - 24px) / 2);
+  ow-gap: 24px;
+column-gap: 72px;
 }
 .features-title {
   padding-bottom: 8px;
@@ -522,7 +524,8 @@ padding-top: 96px;
 
 @media screen and (min-width: 768px) {
 .team-list {
-gap: 32px;
+column-gap: 24px;
+row-gap: 64px;
 flex-wrap: wrap;
 flex-direction: row;
 justify-content: center;
@@ -695,7 +698,7 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 288px;
-  padding-top: 16px;
+  
 }
 .second-context {
   font-weight: 500;
@@ -722,11 +725,7 @@ img {
   width: 24px;
   height: 24px;
 }
-.footer-form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 .subcribe-title{
   font-weight: 500;
 font-size: 16px;
@@ -758,7 +757,7 @@ padding: 8px 0 8px 16px;
 .input-btn{
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 16px;
   justify-content: center;
 }
 
@@ -769,7 +768,6 @@ padding: 8px 0 8px 16px;
 @media screen and (min-width: 768px) {
     .container.footer{
         display: flex;
-        justify-content: center;
     }
     .second-footer {
         align-items: first baseline;
@@ -792,11 +790,10 @@ padding: 8px 0 8px 16px;
   flex-direction: row;
   align-items: baseline;
   flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
 }
-.subcribe-title{
-padding-bottom: 16px;
-padding-top: 72px;
-}
+
 
 .social.footer {
   gap: 16px;
@@ -804,7 +801,6 @@ padding-top: 72px;
 .input-btn{
   display: inline-flex;
   gap: 24px;
-  padding-top: 112px;
 
 }
 .hero-button.footer{
