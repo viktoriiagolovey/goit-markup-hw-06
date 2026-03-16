@@ -214,9 +214,6 @@ button {
   padding: 72px 0;
   max-width: 320px;
   margin: auto;
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -300,9 +297,6 @@ text-align: center;
  .hero-section {
   padding: 112px 0;
   max-width: 768px;
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/tablet-hero.jpg);
  }
  .hero-title {
   font-size: 56px;
@@ -315,10 +309,8 @@ text-align: center;
   .hero-section {
   padding: 188px 0;
   max-width: 1440px;
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-section.jpg);
  }
+
  .hero-title {
   width: 496px;
   padding-bottom: 48px;
@@ -678,7 +670,19 @@ img {
 }
 
 /* footer region */
+.container.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  justify-content: center;
+  column-gap: 24px;
+}
 
+.container.footer{
+    row-gap: 72px;
+  column-gap: 24px;
+}
 .page-footer {
   background-color: #2e2f42;
   padding: 96px 0;
@@ -701,6 +705,13 @@ img {
   width: 288px;
   
 }
+.footer-form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
 .second-context {
   font-weight: 500;
   font-size: 16px;
@@ -714,7 +725,6 @@ img {
   gap: 16px;
   justify-content: center;
   align-items: center;
-  padding-top: 72px;
 }
 
 .first-footer {
@@ -734,8 +744,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
-padding-bottom: 16px;
-padding-top: 72px;
+
 }
 
 
@@ -789,15 +798,17 @@ padding: 8px 0 8px 16px;
   max-width: 264px;
   margin-right: 24px;
 }
+
 .container.footer {
-  display: flex;
-  flex-direction: row;
   align-items: baseline;
-  flex-wrap: wrap;
-  row-gap: 72px;
-  column-gap: 24px;
+  justify-content: flex-start;
 }
 
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 16px;
 
 .social.footer {
   gap: 16px;
@@ -846,11 +857,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .hero-button.footer:hover{
   background-color: #31d0aa;
 }
-.footer-form{
-  display: inline-block;
-  margin-left: auto;
-  flex-wrap: wrap;
-}
+
 .input-btn{
 padding-top: 0;
   }
