@@ -677,6 +677,7 @@ img {
   row-gap: 72px;
   justify-content: center;
   column-gap: 24px;
+  
 }
 
 .page-footer {
@@ -729,7 +730,6 @@ img {
   flex-direction: column;
   max-width: 320px;
   gap: 16px;
- 
 }
 .icons.footer {
   width: 24px;
@@ -797,8 +797,6 @@ padding: 8px 0 8px 16px;
   max-width: 264px;
   margin-right: 24px;
 }
-}
-
 .container.footer {
   align-items: baseline;
   justify-content: flex-start;
@@ -810,7 +808,7 @@ padding: 8px 0 8px 16px;
     flex-wrap: wrap;
     column-gap: 16px;
     align-items: first baseline;
-
+}
 .social.footer {
   gap: 16px;
 }
